@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<link type="text/css" href="~/Scripts/easyautocomplete/easy-autocomplete.css" />
+<style type="text/css">
+    .easy-autocomplete ul{
+        list-style:none;
+        padding: 0px 15px;
+    }
+</style>
+
+<h2>Report Issue</h2>
+<div class="row">
+    <div class="col-md-12">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            <div class="control-group">
+                <label class="control-label" for="txtSearchLocation">Your Location</label>
+                <div class="controls">
+                    <input type="text" id="txtSearchLocation" name="txtSearchLocation" autocomplete="off" class="form-control" />
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/easyautocomplete/jquery.easy-autocomplete.js" ></script>
+    <script type="text/javascript">
+    
+        var _locations = {
+
+            data: ["F-10 Sector", "F-8 Sector", "F-7 Sector", "F-6 Sector", "F-5 Sector", "G-10 Sector", "G-9 Sector", "G-8 Sector", "H-9 Sector", "H-8 Sector", "I-9 Sector", "I-8 Sector", "I-10 Sector"],
+            list: {
+                maxNumberOfElements: 10,
+                match: {
+                    enabled: true
+                },
+                sort: {
+                    enabled: true
+                }
+            }
+        };
+
+    $(document).ready(function () {
+        $('#txtSearchLocation').easyAutocomplete(_locations);
+        $('#txtSearchLocation').focus();
+    });
+
+    </script>
+}
+

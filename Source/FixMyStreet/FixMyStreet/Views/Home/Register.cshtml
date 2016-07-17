@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<div class="row">
+    <div class="col-md-12">
+        @using (Html.BeginForm("Register", "Home", FormMethod.Post, new { @class= "form-horizontal" }))
+        {
+            <div class="control-group">
+                <label class="control-label" for="txtFullName">Full Name</label>
+                <div class="controls">
+                    <input type="text" id="txtFullName" name="txtFullName" placeholder="" class="input-xlarge" />
+
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="txtEmail">Email</label>
+                <div class="controls">
+                    <input type="text" id="txtEmail" name="txtEmail" placeholder="" class="input-xlarge" />
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="txtPassword">Password</label>
+                <div class="controls">
+                    <input type="text" id="txtPassword" name="txtPassword" placeholder="" class="input-xlarge" />
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="txtConfirmPassword">Confirm Password</label>
+                <div class="controls">
+                    <input type="text" id="txtConfirmPassword" name="txtConfirmPassword" placeholder="" class="input-xlarge" />
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="" >Role</label>
+                <div class="controls">
+                    <input type="radio" name="userRole" id="reporterRole" value="reporter" />
+                    <label class="control-label" for="reporterRole" >Reporter</label>
+
+                    <br/>
+                    <input type="radio" name="userRole" id="workerRole" value="worker" />
+                    <label class="control-label" for="workerRole">Worker</label>
+                    
+                    <br/>
+                    <input type="radio" name="userRole" id="managerRole" value="manager" />
+                    <label class="control-label" for="managerRole">Manager</label>
+                </div>
+            </div>
+
+            <br/>
+            <div class="controls">
+                <button class="btn btn-success">Register</button>
+                <button class="btn" id="btnCancel" >Cancel</button>
+            </div>
+        }
+   
+    </div>
+
+</div>
+@section scripts{
+   <script type="text/javascript">
+
+       $(document).ready(function () {
+        $('#btnCancel').click(redirectToHomePage);
+    });
+
+    function redirectToHomePage(){
+        //console.log('redirectToHomePage called..................');
+
+        window.location = "/Home/Index";
+
+        return false;
+    }
+
+    </script>
+}

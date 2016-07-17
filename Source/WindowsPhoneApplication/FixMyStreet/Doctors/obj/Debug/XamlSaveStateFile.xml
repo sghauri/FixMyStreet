@@ -1,0 +1,7 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\talhadev\documents\visual studio 2015\projects\fixmystreet\doctors\obj\debug\intermediatexaml\fixmystreet.exe" HashGuid="6dc49d44-d64b-c86e-7965-e57dc26070dc" />
+    <ReferenceAssembly PathName="c:\users\talhadev\documents\visual studio 2015\projects\fixmystreet\packages\rx-core.2.2.5\lib\portable-win81+wpa81\system.reactive.core.dll" HashGuid="e88ff990-7aa8-b77f-93a1-598ee1f64e5f" />
+    <ReferenceAssembly PathName="c:\users\talhadev\documents\visual studio 2015\projects\fixmystreet\packages\rx-interfaces.2.2.5\lib\portable-win81+wpa81\system.reactive.interfaces.dll" HashGuid="2fd855ee-8440-f81f-a427-ceb8eb15ce8f" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

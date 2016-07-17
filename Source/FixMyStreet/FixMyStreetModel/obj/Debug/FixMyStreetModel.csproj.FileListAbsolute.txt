@@ -1,0 +1,5 @@
+D:\1_Projects\Projects\GitHubRepo\FixMyStreet\Source\FixMyStreet\FixMyStreetModel\bin\Debug\FixMyStreetModel.dll
+D:\1_Projects\Projects\GitHubRepo\FixMyStreet\Source\FixMyStreet\FixMyStreetModel\bin\Debug\FixMyStreetModel.pdb
+D:\1_Projects\Projects\GitHubRepo\FixMyStreet\Source\FixMyStreet\FixMyStreetModel\obj\Debug\FixMyStreetModel.csprojResolveAssemblyReference.cache
+D:\1_Projects\Projects\GitHubRepo\FixMyStreet\Source\FixMyStreet\FixMyStreetModel\obj\Debug\FixMyStreetModel.dll
+D:\1_Projects\Projects\GitHubRepo\FixMyStreet\Source\FixMyStreet\FixMyStreetModel\obj\Debug\FixMyStreetModel.pdb

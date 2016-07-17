@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Files>
+  <file>\FixMyStreet.exe</file>
+  <file>\System.Reactive.Core.dll</file>
+  <file>\System.Reactive.Interfaces.dll</file>
+</Files>
